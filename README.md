@@ -37,7 +37,7 @@ Welcome to the AI User Testing Tool! This project is designed to help you get in
 Please run both the frontend and backend projects. First the backend project, then the frontend should start on port 3001.
 They each have their own READMEs.
 
-## OpenAI API Key:
+### OpenAI API Key:
 
 You will need OpenAI API key.
 
