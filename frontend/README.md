@@ -1,3 +1,7 @@
+### Important: start backend first.
+
+## `npm install`
+
 ### `npm start`
 
 Runs the app in development mode.\ 

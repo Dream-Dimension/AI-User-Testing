@@ -201,7 +201,7 @@ const UploadModal: React.FC<UploadModalProps> = ({
         <div className="flex justify-between items-center mb-4">
           <h2>
             <PropagateLoader className='spinner' size={20} color="#8e0091" /> 
-            Running UX Test
+            Running UX Test: {script?.name}
           </h2>
         </div>
 
@@ -228,6 +228,7 @@ const UploadModal: React.FC<UploadModalProps> = ({
         </div>
       </div>
       <h3>{statusMsg}</h3>
+      <p> Total Questions: {script?.questions.length}</p>
       <PropagateLoader color="#8e0091" />
 
     </div>
