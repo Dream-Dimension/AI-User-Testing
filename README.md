@@ -9,17 +9,16 @@ Welcome to the AI User Testing Tool! This project is designed to help you get in
 
 ![Main](images/main.png)
 -----
-
+ <br/><br/>
 ### Editing Scripts:
 
 ![Scripts](images/scripts.png)
 -----
-
+ <br/><br/>
 ### Sample Test Result 
 
 ![Results](images/results_view.png)
-
-
+ <br/><br/>
 
 ## Setting Up & Running the Project
 Please run both the frontend and backend projects. First the backend project, then the frontend should start on port 3001.
