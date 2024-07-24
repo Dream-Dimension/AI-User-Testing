@@ -8,20 +8,29 @@ Welcome to the AI User Testing Tool! This project is designed to help you get in
 ### Main:
 
 ![Main](images/main.png)
+
 -----
+
  <br/><br/>
 ### Editing Scripts:
  <br/>
+
  -----
- 
+
 ![Scripts](images/scripts.png)
+
 -----
+
  <br/><br/>
 ### Sample Test Result:
  <br/>
+ 
  -----
+
 ![Results](images/results_view.png)
+ 
  -----
+ 
  <br/><br/>
 
 ## Setting Up & Running the Project
