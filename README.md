@@ -18,4 +18,4 @@ They each have their own READMEs.
 
 ## Thanks for looking!
 
-![Thanks](images/icon.png)]
+<img src="images/icon.png" width="30px" />
