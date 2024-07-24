@@ -5,7 +5,7 @@
 Welcome to the AI User Testing Tool! This project is designed to help you get initial feedback on your designs using a simulated user powered by AI. It's perfect for a first pass before conducting real user testing, helping you refine the questions you want to ask to get the feedback you need.
 
 
-### Main
+### Main:
 
 ![Main](images/main.png)
 -----
@@ -15,7 +15,7 @@ Welcome to the AI User Testing Tool! This project is designed to help you get in
 ![Scripts](images/scripts.png)
 -----
  <br/><br/>
-### Sample Test Result 
+### Sample Test Result:
  <br/><br/>
 ![Results](images/results_view.png)
  <br/><br/>
