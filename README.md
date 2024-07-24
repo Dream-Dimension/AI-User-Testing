@@ -1,6 +1,6 @@
 
 # Welcome!
-[![Main](images/hero.png)]
+![Welcome](images/hero.jpeg)
 
 
 
@@ -10,10 +10,10 @@ Please run both the frontend and backend projects. First the backend project, th
 They each have their own READMEs.
 
 # Overview
-[![Main](images/main.png)]
-[![Main](images/scripts.png)]
+![Main](images/main.png)]
+![Scripts](images/scripts.png)]
 
 
 ## Thanks for looking!
 
-[![Main](images/icon.png)]
+![Thanks](images/icon.png)]
