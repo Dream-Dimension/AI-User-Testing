@@ -1,0 +1,227 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #73007e;
+  --secondary-color: #f3eaff;
+  --border-color: #a7a7a7;
+  --hover-background-color: #e0e0e0;
+}
+
+h1 {
+  font-weight: 400;
+}
+h2 {
+  font-weight: 300;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.main {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo-image {
+  max-height: 50vh;
+}
+
+.disabled-button {
+  cursor: no-drop;
+}
+
+.main-button {
+  padding: 14px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.main-button-active {
+  background: var(--secondary-color);
+  border: solid 2px var(--primary-color);
+  cursor: pointer;
+}
+
+.main-button-active:hover {
+  border: 2px dashed var(--primary-color);
+  color: var(--primary-color);
+}
+
+.secondary-button {
+  margin: 15px 5px;
+  border-radius: 12px;
+  padding: 5px 20px;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+.main-button-active:hover {
+  border: 2px dashed var(--primary-color);
+  color: var(--primary-color);
+}
+
+.secondary-button:hover {
+  background: var(--secondary-color);
+  border: dashed 1px var(--primary-color);
+}
+
+.img-drop-area {
+  border: 2px dotted grey;
+  padding: 80px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px 5px;
+  max-width:  80%;
+}
+
+.img-drop-area:hover {
+  border: 2px dashed var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.small-close-btn {
+  border-radius: 200px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 8px;
+  margin-left: -10px;
+  border: 1px solid var(--border-color);
+}
+.small-close-btn:hover {
+  border: 3px dashed var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.image-name {
+  font-style: italic;
+}
+
+.dropdown {
+  margin: 10px;
+  padding: 2px 10px;
+  border-radius: 18px;
+}
+
+.question-input {
+  min-width: 80%;
+  padding: 7px;
+  margin: 6px;
+}
+
+.script-name-input {
+  padding: 5px 10px;
+  min-width: 30%;
+}
+
+.button-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Add space between buttons if needed */
+}
+
+.mini-button {
+  border-radius: 200px;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  display: flex; /* Ensure buttons align properly */
+  align-items: center; /* Center content within the button */
+  justify-content: center; /* Center content within the button */
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  padding: 0; /* Remove default padding */
+}
+
+.mini-button:hover {
+  border: 3px dashed var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.close-button {
+  border-radius: 200px;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+.side-by-side {
+  display: inline;
+  margin: 10px;
+}
+.preview-image {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 100px;
+  transition: box-shadow 1.5s ease, max-width 1.0s ease;
+}
+
+.preview-image:hover {
+  max-width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.close-button:hover {
+  border: 2px dashed var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.simple-text-input {
+  padding: 10px;
+  margin: 5px;
+  min-width: 50%;
+  border-radius: 10px;
+}
+
+/** MenuBar **/
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 0;
+  border-width: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover {
+  background-color: var(--hover-background-color);
+}
+
+.tab--selected {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: #f4f4f4; /* Ensure the selected tab is highlighted */
+}
+
+.tab-panel {
+  padding: 20px;
+  transition: opacity 0.5s;
+}
+/*** End MenuBar ***/
+
+.spinner {
+  margin-right: 10px;
+}
+
+.response {
+  padding-left: 20px;
+}
