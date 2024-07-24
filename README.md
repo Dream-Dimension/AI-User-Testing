@@ -7,8 +7,15 @@ Welcome to the AI User Testing Tool! This project is designed to help you get in
 
 ## Overview
 
-![Main](images/main.png)]
-![Scripts](images/scripts.png)]
+![Main](images/main.png)
+
+### Editing Scripts:
+
+![Scripts](images/scripts.png)
+
+### Sample Test Result 
+
+![Results](images/results_view.png)
 
 
 
