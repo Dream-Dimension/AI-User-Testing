@@ -6,7 +6,6 @@ import path from 'path';
 import cors from 'cors';
 import { Script, UXTestResult, Question } from './types';
 import OpenAI from 'openai';
-import keys from './keys';
 
 const app: Express = express();
 
@@ -127,12 +126,11 @@ app.post('/uxtest', express.json(), async (req: Request, res: Response) => {
   const { script, mediaId, openAIKey }: { script: Script; mediaId: string; assistantId?: string, openAIKey?: string } = req.body;
   let { assistantId }: { script: Script; mediaId: string; assistantId?: string } = req.body;
   console.log('openaiKey from frontend', openAIKey);
-  let apiKey = openAIKey == null? keys.openai: openAIKey;
-  if (apiKey == null ){
+  if (openAIKey == null ){
     return res.status(400).json({ error: 'Please provide an openai key'})
   } 
   const openai = new OpenAI({
-    apiKey,
+    apiKey: openAIKey,
   });
 
   if (!script || !mediaId) {
