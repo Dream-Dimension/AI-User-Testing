@@ -7,14 +7,20 @@ interface MediaSelectorProps {
   images: ImageFile[];
   setImages: React.Dispatch<React.SetStateAction<ImageFile[]>>;
   onUploadClick: () => void;
-  onMediaChanged: () => void; 
+  onMediaChanged: () => void;
 }
 
-const MediaSelector: React.FC<MediaSelectorProps> = ({ 
-  images, 
-  setImages, 
+const MediaSelector: React.FC<MediaSelectorProps> = ({
+  images,
+  setImages,
   onMediaChanged,
   onUploadClick }) => {
+  const [designsAreExpanded, setDesignsAreExpanded] = useState(false);
+
+  const toggleDesignExpansion = () => {
+    setDesignsAreExpanded(!designsAreExpanded);
+  };
+
   const onDrop = useCallback((acceptedFiles: File[], fileRejections: FileRejection[]) => {
     const newImages = acceptedFiles.map(file => ({
       file,
@@ -43,16 +49,18 @@ const MediaSelector: React.FC<MediaSelectorProps> = ({
       <div className="px-6 py-4">
         <div
           {...getRootProps()}
-          className={`img-drop-area border-2 border-dashed rounded-lg p-4 text-center cursor-pointer ${
-            isDragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300'
-          }`}
+          className={`img-drop-area border-2 border-dashed rounded-lg p-4 text-center cursor-pointer ${isDragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300'
+            }`}
         >
           <input {...getInputProps()} />
           <p>{isDragActive ? 'Drop the images here' : 'Drag & drop images here, or click to select'}</p>
         </div>
+        {(images.length > 0) && <button className='secondary-button' onClick={toggleDesignExpansion}>
+          {designsAreExpanded ? 'Collapse Designs' : 'Expand Designs'}
+        </button>}
         <div className="space-y-4 mt-4">
           {images.map((image, index) => (
-            <div key={index} className="flex items-center space-x-4">
+            <span key={index}>
               <button
                 onClick={() => removeImage(index)}
                 className="small-close-btn p-1 bg-red-500 text-white rounded hover:bg-red-600"
@@ -60,9 +68,12 @@ const MediaSelector: React.FC<MediaSelectorProps> = ({
                 <X size={16} />
               </button>
               <br />
-              <img className='preview-image' src={image.preview} alt={`Preview ${index}`}/>
+              <img 
+                className={`preview-image ${designsAreExpanded ? 'expanded' : ''}`}
+                src={image.preview} 
+                alt={`Preview ${index}`} />
               <p className='image-name'> {image.file.name} </p>
-            </div>
+            </span>
           ))}
         </div>
       </div>
@@ -70,13 +81,12 @@ const MediaSelector: React.FC<MediaSelectorProps> = ({
         <button
           onClick={onUploadClick}
           disabled={images.length === 0}
-          className={`${
-            images.length === 0
+          className={`${images.length === 0
               ? 'main-button disabled-button bg-gray-300 text-gray-500 cursor-not-allowed'
               : 'main-button main-button-active bg-blue-500 text-white hover:bg-blue-600'
-          }`}
+            }`}
         >
-          Start UX Test 
+          Start UX Test
           <br />
           (With an AI acting as the user)
         </button>

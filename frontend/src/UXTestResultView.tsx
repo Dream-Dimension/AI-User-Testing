@@ -31,8 +31,7 @@ const UXTestResultView: React.FC<Props> = ({ uxTestResult }) => {
         });
     };
 
-    // Function to toggle the expansion of designs
-    const toggleExpansion = () => {
+    const toggleDesignExpansion = () => {
         setDesignsAreExpanded(!designsAreExpanded);
     };
 
@@ -43,7 +42,7 @@ const UXTestResultView: React.FC<Props> = ({ uxTestResult }) => {
 
 
             <h1>Designs Analyzed:</h1>
-            <button className='secondary-button' onClick={toggleExpansion}>
+            <button className='secondary-button' onClick={toggleDesignExpansion}>
                 {designsAreExpanded ? 'Collapse Designs' : 'Expand Designs'}
             </button>
             <br />
