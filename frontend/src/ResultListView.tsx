@@ -54,8 +54,9 @@ const ResultsListView: React.FC = () => {
           <div key={result.id} className="secondary-button" onClick={() => handleResultClick(result)}>
             <div className="result-summary">
               <h2>{result.scriptName}</h2>
+              <p>Conducted on: {moment(result.timestampEnd).format('MMMM D, YYYY, h:mm:ss A')}</p>
               <p>Questions: {result.responses.length}</p>
-              <p>Timestamp: {moment(result.timestampEnd).format('MMMM D, YYYY, h:mm:ss A')}</p>
+
               {result.media.map((mediaPath, index) => {
                 const normalizedPath = mediaPath.replace(/\\/g, '/');
                 const fullUrl = `${SERVER_URL}/${normalizedPath}`;

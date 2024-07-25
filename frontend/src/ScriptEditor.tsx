@@ -268,8 +268,8 @@ const baseTemplates = [
     name: 'Compare Multiple Designs',
     questions: [
       { id: '01', text: 'Can you please tell me what you think you are seeing?' },
-      { id: '02', text: 'Which of these do you prefer and why?' },
-      { id: '03', text: 'Which of these distinct (two, three) designs do you prefer and why? What are their strengths and weaknesses?' },
+      { id: '02', text: 'Which of these do you prefer and why? Pretend you can only pick one and you must choose.' },
+      { id: '03', text: 'What are their strengths and weaknesses? If you could comebine them into one what would you do?' },
     ],
   },
   {

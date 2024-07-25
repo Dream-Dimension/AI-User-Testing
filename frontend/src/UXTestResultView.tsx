@@ -29,6 +29,8 @@ const UXTestResultView: React.FC<Props> = ({ uxTestResult }) => {
 
     return (
         <div className='main'>
+            <h3>{uxTestResult.scriptName} </h3>
+
             <h1>Designs Analyzed:</h1>
             {uxTestResult.media.map(mediaPath => {
                 const normalizedPath = mediaPath.replace(/\\/g, '/');
