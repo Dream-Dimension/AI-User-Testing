@@ -292,9 +292,10 @@ const baseTemplates = [
     id: 'personas',
     name: 'Suggest Personas and Potential Users',
     questions: [
-      { id: '01', text: 'What type of primary user would you expect for this? Who could benefit the most and how?' },
-      { id: '02', text: 'What about secondary users?' },
-      { id: '03', text: 'Can you please create persona profiles for each (primary and secondary users), with goals, and key characteristics + needs.' },
+      { id: '01', text: 'What type of primary user would you expect for this? Who could benefit the most and why/how?' },
+      { id: '02', text: 'Can you please create a persona profile for the primary user(s). With goals, and key characteristics + needs.' },
+      { id: '03', text: 'What about secondary users?' },
+      { id: '04', text: 'Can you please create persona profiles for each secondary users, with goals, and key characteristics + needs.' },
 
     ],
   },
