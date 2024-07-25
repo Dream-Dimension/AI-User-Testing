@@ -5,7 +5,6 @@
 https://github.com/user-attachments/assets/805345e0-0438-4dcf-90cb-74ae983313a7
 
 
-<img src="images/hero.jpeg" width="500px" />
 
 Welcome to the AI User Testing Tool! This project is designed to help you get initial feedback on your designs using a simulated user powered by AI. It's perfect for a first pass before conducting real user testing, helping you refine the questions you want to ask to get the feedback you need.
 
@@ -48,5 +47,5 @@ They each have their own READMEs.
 You will need OpenAI API key.
 
 ## Thanks for looking!
+<img src="images/hero.jpeg" width="500px" />
 
-<img src="images/icon.png" width="100px" />
