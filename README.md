@@ -27,7 +27,7 @@ Welcome to the AI User Testing Tool! This project is designed to help you get in
  
  -----
 
-![Results](images/results_view.png)
+![Results](images/results_view_2.png)
  
  -----
  
