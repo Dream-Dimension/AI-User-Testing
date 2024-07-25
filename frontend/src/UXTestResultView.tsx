@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { SERVER_URL } from './constants.util';
 
 import './App.css';
+import moment from 'moment';
 
 interface Props {
     uxTestResult: UXTestResult;
@@ -30,21 +31,17 @@ const UXTestResultView: React.FC<Props> = ({ uxTestResult }) => {
     return (
         <div className='main'>
             <h3>{uxTestResult.scriptName} </h3>
+            <p>Conducted on: {moment(uxTestResult.timestampEnd).format('MMMM D, YYYY, h:mm:ss A')}</p>
 
             <h1>Designs Analyzed:</h1>
-            {uxTestResult.media.map(mediaPath => {
+            {uxTestResult.media.map((mediaPath, index) => {
                 const normalizedPath = mediaPath.replace(/\\/g, '/');
                 const fullUrl = `${SERVER_URL}/${normalizedPath}`;
                 return (
-                    <div key={mediaPath}>
-                        <img className='preview-image' src={fullUrl} alt='Design preview' />
-                        <br />
-                        <br />
-                    </div>
+                    <img key={mediaPath} className='preview-image side-by-side' src={fullUrl} alt={`Preview ${index + 1}`} />
                 );
             })}
-
-            <h1>UX Test Result:</h1>
+            <h1>UX Test Result ({uxTestResult.responses.length} responses):</h1>
             {uxTestResult.responses.map(({ question, response }, index) => (
 
 
