@@ -276,7 +276,8 @@ const baseTemplates = [
     id: 'reword_ui_text',
     name: 'Reword UI Text',
     questions: [
-      { id: '01', text: 'Can you please reword the UI elements in these design (buttons, headings, etc) to make them clearer? Please provide your reasoning (pros and cons, etc).' },
+      { id: '01', text: 'Consider what this UI is about and then think about this: What UI text is unclear to you?' },
+      { id: '02', text: 'Can you please reword the UI elements in these design (buttons, headings, etc) to make them clearer? Please provide your reasoning (pros and cons, etc).' },
     ],
   },
   {
