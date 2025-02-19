@@ -254,7 +254,7 @@ async function makeRun(openai: any, threadId: string, assistantId: string): Prom
     console.log('msgs', messages.data);
     return messages.data;
   } else {
-    console.log(run.status);
+    console.log('Failed Status:', run.status, ', details: ', run);
   }
 }
 async function runOnImage(openai: any, threadId: string, assistantId: string, text: string): Promise<string> {
