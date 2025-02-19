@@ -49,3 +49,8 @@ You will need OpenAI API key.
 ## Thanks for looking!
 <img src="images/hero.jpeg" width="500px" />
 
+
+## Running
+Run each project, one in frontend and one in backend
+ Backend should run on port 3001
+ Try running frontend first? So it takes port 3000
