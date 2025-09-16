@@ -56,7 +56,7 @@ const MediaSelector: React.FC<MediaSelectorProps> = ({
           <p>{isDragActive ? 'Drop the images here' : 'Drag & drop images here, or click to select'}</p>
         </div>
         {(images.length > 0) && <button className='secondary-button' onClick={toggleDesignExpansion}>
-          {designsAreExpanded ? 'Collapse Designs' : 'Expand Designs'}
+          {designsAreExpanded ? 'Collapse Designs' : 'Expand Designs ' + images.length}
         </button>}
         <div className="space-y-4 mt-4">
           {images.map((image, index) => (
